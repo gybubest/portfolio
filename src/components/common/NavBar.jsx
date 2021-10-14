@@ -1,11 +1,13 @@
 import logoLight from '../../assets/icons/logo-light.png';
+import menu from '../../assets/icons/menu.png';
+import close from '../../assets/icons/close.png';
 import styled from 'styled-components';
 
 const NavBar = () => {
   return (
     <Navigation>
       <Logo>
-        <a href={'/'}><img src={logoLight} alt={'Y.G. Logo'}></img></a>
+        <a href={'/'}><img src={logoLight} alt={'Home Page'} title={'Home Page'}></img></a>
       </Logo>
       <Links>
         <a href={'/about'}>ABOUT</a>
@@ -21,24 +23,37 @@ const Navigation = styled.div`
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  width: 100%;
+  padding: 20px;
+  img {
+   height: 100%; 
+  }
 `
 
 const Logo = styled.div`
   img {
-   height: 100%; 
+   // height: 100%; 
    margin-left: 20px;
   }
 `
 
 const Links = styled.div`
-    a {
-      margin-right: 20px;
-      color: #1d1d1f;
-      text-decoration: none;
-      :hover {
-        text-decoration: underline;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  a {
+    margin-right: 20px;
+    color: #1d1d1f;
+    text-decoration: none;
+    :hover {
+      text-decoration: underline;
+      color: #250d53;
     }
+    
+    @media only screen and (max-width: 768px) {
+      font-size: 10px;
+      margin-right: 10px;
+    }
+  }
 `
 
 export default NavBar;

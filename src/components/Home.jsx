@@ -3,7 +3,7 @@ import Contact from './common/Contact';
 import styled from 'styled-components';
 import Profile from './Profile';
 
-const About = () => {
+const Home = () => {
   return (
     <Wrapper>
       <NavBar></NavBar>
@@ -15,11 +15,10 @@ const About = () => {
 
 const Wrapper = styled.div`
   font-family: 'Lato', sans-serif;
-  background-color-: #fff;
+  background-color: #fff;
   color: #1d1d1f;
-  font-size: 20px;
+  font-size: 15px;
   height: 100%;
-  padding: 20px;
 `
 
-export default About;
+export default Home;

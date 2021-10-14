@@ -3,14 +3,14 @@ import {
     Route,
     Switch
 } from 'react-router-dom';
-import About from './About';
+import Home from './Home';
 
 function App() {
   return (
       <Router>
           <Switch>
-              <Route exact path="/About">
-                  <About />
+              <Route exact path="/about">
+                  {/*<About />*/}
               </Route>
               <Route exact path="/portfolio">
                   {/*<Portfolio />*/}
@@ -19,7 +19,7 @@ function App() {
                   {/*<Resume />*/}
               </Route>
               <Route path="/">
-                  <About />
+                  <Home />
               </Route>
           </Switch>
       </Router>
