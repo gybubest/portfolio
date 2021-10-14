@@ -1,6 +1,4 @@
 import logoLight from '../../assets/icons/logo-light.png';
-import menu from '../../assets/icons/menu.png';
-import close from '../../assets/icons/close.png';
 import styled from 'styled-components';
 
 const NavBar = () => {
@@ -12,7 +10,7 @@ const NavBar = () => {
       <Links>
         <a href={'/about'}>ABOUT</a>
         <a href={'/portfolio'}>PORTFOLIO</a>
-        <a href={'https://resume.creddle.io/resume/dmn2na5o6bs'}>RESUME</a>
+        <a href={'https://resume.creddle.io/resume/dmn2na5o6bs'} target="_blank" rel="noreferrer">RESUME</a>
       </Links>
     </Navigation>
   );
@@ -31,7 +29,6 @@ const Navigation = styled.div`
 
 const Logo = styled.div`
   img {
-   // height: 100%; 
    margin-left: 20px;
   }
 `

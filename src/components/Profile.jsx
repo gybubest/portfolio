@@ -2,18 +2,18 @@ import styled, {keyframes} from 'styled-components';
 
 const Profile = () => {
   return (
-    <ProfileBox>
+    <Wrapper>
       <Title>
         Hello, my name is Yu Gao.
       </Title>
       <Subtitle>
         A Full-Stack Developer.
       </Subtitle>
-    </ProfileBox>
+    </Wrapper>
   );
 }
 
-const ProfileBox = styled.div`
+const Wrapper = styled.div`
   font-family: 'Ubuntu', sans-serif;
   height: 300px;
   padding: 20px;
