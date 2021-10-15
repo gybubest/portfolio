@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Profile = () => {
   return (
@@ -12,33 +12,6 @@ const Profile = () => {
     </Wrapper>
   );
 }
-
-const Wrapper = styled.div`
-  font-family: 'Ubuntu', sans-serif;
-  height: 300px;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-    @media only screen and (max-width: 576px) {
-      margin: 12% auto;
-    }
-    
-    @media only screen and (min-width: 576px) {
-      margin: 8% auto;
-    }
-    
-    @media only screen and (min-width: 768px) {
-      margin: 6% auto;
-    }
-    
-    @media only screen and (min-width: 992px) {
-      margin: 4.5% auto;
-    }
-`
 
 const typewriter = keyframes`
   to {
@@ -58,6 +31,32 @@ const fadeInUp = keyframes`
     transform: translateY(0);
   }
 `;
+
+const Wrapper = styled.div`
+  height: 300px;
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+    @media only screen and (max-width: 576px) {
+      margin: 20% auto;
+    }
+    
+    @media only screen and (min-width: 576px) {
+      margin: 20% auto 8%;
+    }
+    
+    @media only screen and (min-width: 768px) {
+      margin: 17% auto 6%;
+    }
+    
+    @media only screen and (min-width: 992px) {
+      margin: 12% auto 4%;
+    }
+`
 
 const Title = styled.div`
     position: relative;
@@ -112,7 +111,7 @@ const Subtitle = styled.div`
   font-weight: 700;
   opacity: 0;
   transform: translateY(3rem);
-  animation: ${fadeInUp} 2s ease 4s forwards;
+  animation: ${fadeInUp} 2s ease 3s forwards;
       @media only screen and (max-width: 576px) {
         font-size: 35px;
       }

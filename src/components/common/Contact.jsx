@@ -40,6 +40,7 @@ const Contact = () => {
 }
 
 const Wrapper = styled.div`
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
