@@ -49,7 +49,7 @@ const About = () => {
   const hobbies = ['👨🏻‍💻 Coding', '📚 Reading', '🚶🏻 Walking', '🍪 Baking', '💪🏼 Workout', '📽 Movie', '🌲 Nature', '✈️ Travel'];
   const thingsIEnjoy = hobbies.map((h, i) => <span key={i}>{h}</span>);
 
-  const flags = ['🇨🇦 Canada', '🇬🇧 UK', '🇪🇸 Spain', '🇺🇿 Uzbekistan', '🇦🇲 Armenia', '🇧🇾 Belarus', '🇵🇱 Poland', '🇨🇿 Czech Republic', '🇰🇬 Kyrgyzstan', '🇹🇭 Thailand', '🇷🇺 Russia', '🇨🇳 China'];
+  const flags = ['🇦🇲 Armenia', '🇧🇾 Belarus', '🇨🇦 Canada', '🇨🇳 China', '🇨🇿 Czechia', '🇰🇬 Kyrgyzstan', '🇵🇱 Poland', '🇷🇺 Russia', '🇪🇸 Spain', '🇹🇭 Thailand', '🇬🇧 UK', '🇺🇿 Uzbekistan'];
   const placesIVisited = flags.map((f, i) => <span key={i}>{f}</span>);
 
   return (
@@ -90,10 +90,6 @@ const Wrapper = styled.div`
   background-color: #fbfbfd;
   opacity: 0;
   animation: ${props => props.show && css`${fadeInUp} 2s ease forwards`};
-
-  @media only screen and (max-width: 576px) {
-    margin: 20% auto;
-  }
   
   @media only screen and (min-width: 576px) {
     margin: 20% auto 8%;

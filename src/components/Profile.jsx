@@ -41,21 +41,21 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   
-    @media only screen and (max-width: 576px) {
-      margin: 20% auto;
-    }
-    
-    @media only screen and (min-width: 576px) {
-      margin: 20% auto 8%;
-    }
-    
-    @media only screen and (min-width: 768px) {
-      margin: 17% auto 6%;
-    }
-    
-    @media only screen and (min-width: 992px) {
-      margin: 12% auto 4%;
-    }
+  @media only screen and (max-width: 576px) {
+    margin-top: 20%;
+  }
+  
+  @media only screen and (min-width: 576px) {
+    margin: 20% auto 8%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    margin: 17% auto 6%;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    margin: 12% auto 4%;
+  }
 `
 
 const Title = styled.div`

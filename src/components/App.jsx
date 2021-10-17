@@ -1,7 +1,7 @@
 import {
   BrowserRouter as Router, Link,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom';
 import styled from 'styled-components';
 import About from './About';
@@ -13,16 +13,16 @@ import useDocumentScrollHook from '../hooks/useDocumentScrollHook';
 
 const App = () => {
   const displayShadow = useDocumentScrollHook().scrolled;
-
   return (
     <Wrapper>
       <Router>
         <Header displayShadow={displayShadow}>
           <Navigation>
             <Logo>
-              <Link to={'/'}><img src={logoLight} alt={'Home Page'} title={'Home Page'}></img></Link>
+              <Link to={'/'}><img src={logoLight} alt={'LOGO'}></img></Link>
             </Logo>
             <Links>
+              <Link to={'/'}>HOME</Link>
               <Link to={'/portfolio'}>PORTFOLIO</Link>
               <a href={'https://resume.creddle.io/resume/dmn2na5o6bs'} target="_blank" rel="noreferrer">RESUME</a>
             </Links>
@@ -33,7 +33,7 @@ const App = () => {
           <Route exact path="/portfolio">
             <Portfolio />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Profile />
             <About />
           </Route>
@@ -94,7 +94,6 @@ const Links = styled.div`
     text-decoration: none;
     :hover {
       text-decoration: underline;
-      color: #250d53;
     }
     
     @media only screen and (max-width: 768px) {
