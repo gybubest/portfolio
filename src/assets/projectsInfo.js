@@ -17,6 +17,11 @@ import leagueFrontend1 from '../assets/projects/league-frontend-1.png';
 import leagueFrontend2 from '../assets/projects/league-frontend-2.png';
 import leagueFrontend3 from '../assets/projects/league-frontend-3.png';
 import shopifyFrontend1 from '../assets/projects/shopify-frontend-1.png';
+import backOffice1 from '../assets/projects/back-office-1.png';
+import backOffice2 from '../assets/projects/back-office-2.png';
+import backOffice3 from '../assets/projects/back-office-3.png';
+import backOffice4 from '../assets/projects/back-office-4.png';
+import backOffice5 from '../assets/projects/back-office-5.png';
 
 const projects = {
   "1": {
@@ -92,7 +97,13 @@ const projects = {
     title: "Maegan Back-Office",
     description: "Dashboard application for managing restaurants, menus and online orders.",
     link: null,
-    snapshots: null
+    snapshots: [
+      backOffice1,
+      backOffice2,
+      backOffice3,
+      backOffice4,
+      backOffice5
+    ]
   }
 }
 

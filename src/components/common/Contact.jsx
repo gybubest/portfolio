@@ -1,16 +1,10 @@
 import {useEffect, useState} from 'react';
 import styled from 'styled-components';
-
-import github from '../../assets/icons/github.png';
-import linkedIn from '../../assets/icons/linkedin.png';
-import location from '../../assets/icons/location.png';
-import phone from '../../assets/icons/phone.png';
-import email from '../../assets/icons/email.png';
+import contactInfo from '../../assets/contactInfo';
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
-  const PHONE_NUMBER = '+16477646662';
-  const EMAIL_ADDRESS = 'gaoyububest@gmail.com';
+  const { phone, email, github, linkedIn, location } = contactInfo;
 
   useEffect(() => {
     setTimeout(() => {
@@ -29,11 +23,11 @@ const Contact = () => {
         {copied ? 'Copied to clipboard.' : ''}
       </CopyMessage>
       <SocialMedia>
-        <CopyContact onClick={() => copyToClipBoard(EMAIL_ADDRESS)}><SMIcons src={email} alt={'Email'} title={'Copy Email Address'}></SMIcons></CopyContact>
-        <CopyContact onClick={() => copyToClipBoard(PHONE_NUMBER)}><SMIcons src={phone} alt={'Phone number'} title={'Copy Phone Number'}></SMIcons></CopyContact>
-        <a href={'https://github.com/gybubest'} target="_blank" rel="noreferrer"><SMIcons src={github} alt={'Github'} title={'Checkout my Github'}></SMIcons></a>
-        <a href={'https://www.linkedin.com/in/bestyugao/'} target="_blank" rel="noreferrer"><SMIcons src={linkedIn} alt={'LinkedIn'} title={'Connect on LinkedIn'}></SMIcons></a>
-        <a href={'https://goo.gl/maps/LSkREq3DofbbDZ8o9'} target="_blank" rel="noreferrer"><SMIcons src={location} alt={'Location'} title={'Toronto, Canada'} lastIcon></SMIcons></a>
+        <CopyContact onClick={() => copyToClipBoard(email.value)}><SMIcons src={email.icon} alt={email.alt} title={email.title}></SMIcons></CopyContact>
+        <CopyContact onClick={() => copyToClipBoard(phone.value)}><SMIcons src={phone.icon} alt={phone.alt} title={phone.title}></SMIcons></CopyContact>
+        <a href={github.value} target="_blank" rel="noreferrer"><SMIcons src={github.icon} alt={github.alt} title={github.title}></SMIcons></a>
+        <a href={linkedIn.value} target="_blank" rel="noreferrer"><SMIcons src={linkedIn.icon} alt={linkedIn.alt} title={linkedIn.title}></SMIcons></a>
+        <a href={location.value} target="_blank" rel="noreferrer"><SMIcons src={location.icon} alt={location.alt} title={location.title} lastIcon></SMIcons></a>
       </SocialMedia>
     </Wrapper>
   );
