@@ -60,8 +60,7 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
     position: relative;
-    width: max-content;
-    
+        
       ::before,
         ::after {
         content: '';
