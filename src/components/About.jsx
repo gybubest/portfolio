@@ -86,7 +86,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: self-start;
+  align-items: flex-start;
   background-color: #fbfbfd;
   opacity: 0;
   animation: ${props => props.show && css`${fadeInUp} 2s ease forwards`};
@@ -130,10 +130,6 @@ const Container = styled.div`
 
 const Title = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: width: 100%;;
-  justify-content: start;
   font-size: 30px;
   font-weight: bold;
   margin: 0 40px 40px auto;
@@ -144,7 +140,6 @@ const Title = styled.div`
   
   @media only screen and (min-width: 1200px) {
     width: 30%;
-    align-items: center;
   }
 `
 
@@ -175,13 +170,11 @@ const Content = styled.div`
   
   @media only screen and (min-width: 576px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px 15px;
   }
   
   @media only screen and (min-width: 1200px) {
     width: 70%;
     grid-template-columns: repeat(4, 1fr);
-    gap: 35px 15px;
   }
 `
 

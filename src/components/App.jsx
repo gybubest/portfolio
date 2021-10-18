@@ -30,7 +30,7 @@ const App = () => {
         </Header>
 
         <Switch>
-          <Route exact path="/portfolio">
+          <Route path="/portfolio">
             <Portfolio />
           </Route>
           <Route exact path="/">
@@ -70,7 +70,7 @@ const Navigation = styled.div`
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  padding: 20px;
+  padding: 20px 40px;
   
    @media only screen and (max-width: 768px) {
      height: 30px; 

@@ -61,6 +61,10 @@ const SocialMedia = styled.div`
 const SMIcons = styled.img`
     width: 30px;
     margin-right: ${props => props.lastIcon ? "0" : "20px"};
+    
+    :hover {
+      opacity: 0.7;
+    }
 `
 
 const CopyContact = styled.span`
