@@ -1,8 +1,10 @@
 import { useParams } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import weblink from '../assets/icons/weblink.png';
+import useScrollToTopHook from '../hooks/useScrollToTopHook';
 
 const Project = (props) => {
+  useScrollToTopHook();
   const { id } = useParams();
   const { title, description, link, snapshots } = props.portfolio?.[id];
   const pictures = snapshots?.map((snapshot, i) => {
