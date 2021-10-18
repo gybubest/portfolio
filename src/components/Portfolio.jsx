@@ -48,7 +48,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
   margin-top: 20%;
   opacity: 0;
-  animation: ${fadeInUp} 2s ease forwards;
+  animation: ${fadeInUp} 2s ease 1s forwards;
 
   @media only screen and (min-width: 576px) {
     margin-top: 10%;

@@ -88,7 +88,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   opacity: 0;
-  animation: ${fadeInUp} 2s ease 0.5s forwards;
+  animation: ${fadeInUp} 2s ease 1s forwards;
   
   img {
     width: 100%;
