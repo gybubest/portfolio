@@ -1,5 +1,5 @@
 import {Link, Route, Switch, useRouteMatch} from 'react-router-dom';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import projects from '../assets/projectsInfo.js';
 import Project from './Project';
 
@@ -32,6 +32,13 @@ const Portfolio = () => {
   );
 }
 
+const fadeInUp = keyframes`
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 const Wrapper = styled.div`
   height: 100%;
   padding: 40px;
@@ -40,7 +47,9 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   margin-top: 20%;
-  
+  opacity: 0;
+  animation: ${fadeInUp} 2s ease forwards;
+
   @media only screen and (min-width: 576px) {
     margin-top: 10%;
   }
@@ -53,10 +62,6 @@ const Title = styled.div`
   
   @media only screen and (min-width: 576px) {
     font-size: 40px;
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    width: 30%;
   }
 `
 

@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import weblink from '../assets/icons/weblink.png';
 
 const Project = (props) => {
   const { id } = useParams();
@@ -9,16 +10,15 @@ const Project = (props) => {
       <img key={i} src={snapshot}/>
     )
   })
-  const linkName = link ? link.type === 'website' ? 'Website link' : 'Github Repo' : null;
 
   return (
     <Wrapper>
-      <h3>{title}</h3>
-      {linkName &&
-        <a href={link?.url} target="_blank" rel="noreferrer">
-          <span>{linkName}</span>
-        </a>
-      }
+      <Title>
+        <span>{title}</span>
+        {link && <a href={link?.url} target="_blank" rel="noreferrer">
+          <img src={weblink}/>
+        </a>}
+      </Title>
       <p>{description}</p>
       <Container>
         {pictures}
@@ -27,28 +27,57 @@ const Project = (props) => {
   );
 }
 
+const fadeInUp = keyframes`
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 const Wrapper = styled.div`
   height: 100%;
-  width: 100%
-  padding: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
-  margin-top: 10%;
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    p {
+      font-size: 20px;
+    }
+  }
 `
 const Title = styled.div`
   width: 100%;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  
+  span {
+    margin-right: 20px;
+  }
+   
+  img {
+    width: 15px;
+    height: 15px;
+    
+    :hover {
+      opacity: 0.7;
+    }
+  }
   
   @media only screen and (min-width: 576px) {
     font-size: 40px;
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    width: 30%;
   }
 `
 
@@ -57,20 +86,14 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  img {
-    width: 400px;
-    // height: 200px;
-    margin-bottom: 10px;
-  }
+  width: 100%;
+  opacity: 0;
+  animation: ${fadeInUp} 2s ease 0.5s forwards;
   
-  // @media only screen and (max-width: 992px) {
-  //   grid-template-columns: repeat(1, 1fr);
-  //   img {
-  //     width: 30px;
-  //     height: 30px;
-  //   }
-  // }
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 `
 
 export default Project;
