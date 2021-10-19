@@ -1,12 +1,10 @@
 import { useParams } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import weblink from '../assets/icons/weblink.png';
-import useScrollToTopHook from '../hooks/useScrollToTopHook';
 
 const Project = (props) => {
-  useScrollToTopHook();
   const { id } = useParams();
-  const { title, description, link, snapshots } = props.portfolio?.[id];
+  const { title, description, tech, link, snapshots } = props.portfolio?.[id];
   const pictures = snapshots?.map((snapshot, i) => {
     return (
       <img key={i} src={snapshot}/>
@@ -17,11 +15,12 @@ const Project = (props) => {
     <Wrapper>
       <Title>
         <span>{title}</span>
-        {link && <a href={link?.url} target="_blank" rel="noreferrer">
+        {link && <a href={link} target="_blank" rel="noreferrer">
           <img src={weblink}/>
         </a>}
       </Title>
       <p>{description}</p>
+      <p>{tech}</p>
       <Container>
         {pictures}
       </Container>
@@ -46,6 +45,8 @@ const Wrapper = styled.div`
   
   p {
     line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 0;
   }
   
   @media only screen and (min-width: 768px) {
@@ -63,7 +64,7 @@ const Title = styled.div`
   width: 100%;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   
   span {
     margin-right: 20px;

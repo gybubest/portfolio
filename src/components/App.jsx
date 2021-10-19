@@ -9,11 +9,13 @@ import Portfolio from './Portfolio';
 import Contact from './common/Contact';
 import Profile from './Profile';
 import NavBar from './common/NavBar';
+import ScrollToTop from '../hooks/useScrollToTopHook';
 
 const App = () => {
   return (
     <Wrapper>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Switch>
           <Route path="/portfolio">

@@ -2,10 +2,8 @@ import {Link, Route, Switch, useRouteMatch} from 'react-router-dom';
 import styled, {keyframes} from 'styled-components';
 import projects from '../assets/projectsInfo.js';
 import Project from './Project';
-import useScrollToTopHook from '../hooks/useScrollToTopHook';
 
 const Portfolio = () => {
-  useScrollToTopHook();
   const { path, url } = useRouteMatch();
   const portfolio = Object.keys(projects).reverse().map((key, i) => {
     const {title, snapshots} = projects?.[key];

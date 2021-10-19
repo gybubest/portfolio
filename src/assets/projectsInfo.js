@@ -22,15 +22,16 @@ import backOffice2 from '../assets/projects/back-office-2.png';
 import backOffice3 from '../assets/projects/back-office-3.png';
 import backOffice4 from '../assets/projects/back-office-4.png';
 import backOffice5 from '../assets/projects/back-office-5.png';
+import iproxy1 from '../assets/projects/iproxy-1.png';
+import iproxy2 from '../assets/projects/iproxy-2.png';
+import iproxy3 from '../assets/projects/iproxy-3.png';
 
 const projects = {
   "1": {
     title: "Interview Scheduler",
-    description: "Single-page app, built on React components, which helps book, edit, and cancel appointments. Tech stack: React, Express, SQL, Jest, Storybook, Cypress",
-    link: {
-      type: 'github',
-      url: "https://github.com/gybubest/scheduler"
-    },
+    description: "SAP which helps users book, edit, and cancel appointments. ",
+    tech: "Tech stack: Javascript, React, Express, SQL, Jest, Storybook, Cypress.",
+    link: "https://github.com/gybubest/scheduler",
     snapshots: [
       interviewScheduler1,
       interviewScheduler2
@@ -38,11 +39,9 @@ const projects = {
   },
   "2": {
     title: "Jungle-rails",
-    description: "E-commerce application built with Rails. Tech stack: Ruby on Rails, PostgreSQL, RSpec, Capybara",
-    link: {
-      type: 'github',
-      url: "https://github.com/gybubest/jungle-rails"
-    },
+    description: "E-commerce application with customized categories and checkout experience.",
+    tech: "Tech stack: Ruby, Rails, Active Record, PostgreSQL, RSpec, Capybara.",
+    link: "https://github.com/gybubest/jungle-rails",
     snapshots: [
       jungleRails1,
       jungleRails2,
@@ -51,11 +50,9 @@ const projects = {
   },
   "3": {
     title: "Album Viewer",
-    description: "SPA based on React which enables users to view albums and search photos inside an album",
-    link: {
-      type: 'website',
-      url: "https://league-f.herokuapp.com/"
-    },
+    description: "SPA which enables users to view albums and search photos inside an album",
+    tech: "Tech stack: Javascript, React.",
+    link: "https://league-f.herokuapp.com/",
     snapshots: [
       leagueFrontend1,
       leagueFrontend2,
@@ -64,22 +61,18 @@ const projects = {
   },
   "4": {
     title: "Movie Collection",
-    description: "SPA based on React which enables users to search movies from OMDB, select up to 5 favourites for nomination.",
-    link: {
-      type: 'website',
-      url: "https://s-f.herokuapp.com/"
-    },
+    description: "SPA which enables users to search movies from OMDB, select up to 5 favourites for nomination.",
+    tech: "Tech stack: Javascript, React.",
+    link: "https://s-f.herokuapp.com/",
     snapshots: [
       shopifyFrontend1
     ]
   },
   "5": {
     title: "Insight",
-    description: "Networking application which helps employers leverage their employees to make references, and open up the hidden job market for individual users. Tech stack: React, Ruby on Rails, Active Record, PostgreSQL",
-    link: {
-      type: 'github',
-      url: "https://github.com/gybubest/final-project"
-    },
+    description: "My graduation project at Lighthouse Labs Bootcamp. Professional networking application which helps employers leverage their employees to make referrals, and open up the hidden job market for individual users.",
+    tech: "Tech stack: Javascript, React, Ruby on Rails, Active Record, PostgreSQL.",
+    link: "https://github.com/gybubest/final-project",
     snapshots: [
       insight1,
       insight2,
@@ -94,9 +87,21 @@ const projects = {
     ]
   },
   "6": {
+    title: "iProxy",
+    description: "Dashboard application for managing proxy connections. I implemented Blog component and and built a multi-language library from scratch using i18n.",
+    tech: "Tech stack: Typescript, React, Redux, Redux-observable, Styled Components.",
+    link: "https://iproxy.online/en/",
+    snapshots: [
+      iproxy1,
+      iproxy2,
+      iproxy3
+    ]
+  },
+  "7": {
     title: "Maegan Back-Office",
-    description: "Dashboard application for managing restaurants, menus and online orders.",
-    link: null,
+    description: "Dashboard application for managing restaurants, menus and online orders. I Created Form components with complex structures and customized functionalities based on the users' settings.",
+    tech: "Tech stack: Typescript, Angular, RxJS, Bootstrap, Less.",
+    link: "https://tacitcorporation.com/",
     snapshots: [
       backOffice1,
       backOffice2,
