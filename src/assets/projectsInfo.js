@@ -25,9 +25,43 @@ import backOffice5 from '../assets/projects/back-office-5.png';
 import iproxy1 from '../assets/projects/iproxy-1.png';
 import iproxy2 from '../assets/projects/iproxy-2.png';
 import iproxy3 from '../assets/projects/iproxy-3.png';
+import tinyApp1 from '../assets/projects/tiny-app-1.png';
+import tinyApp2 from '../assets/projects/tiny-app-2.png';
+import tinyApp3 from '../assets/projects/tiny-app-3.png';
+import tinyApp4 from '../assets/projects/tiny-app-4.png';
+import tweeter1 from '../assets/projects/tweeter-1.png';
+import tweeter2 from '../assets/projects/tweeter-2.png';
+import tweeter3 from '../assets/projects/tweeter-3.png';
+import tweeter4 from '../assets/projects/tweeter-4.png';
+import tweeter5 from '../assets/projects/tweeter-5.png';
 
 const projects = {
   "1": {
+    title: "Tiny App",
+    description: "My first full stack web app! It allows users to shorten long URLs (using bit.ly). Only registered users can create, update their URL database, and view the visitors history for each URL.",
+    tech: "Tech stack: Javascript, Node.js, Express, HTML, CSS.",
+    link: "https://github.com/gybubest/tinyapp",
+    snapshots: [
+      tinyApp1,
+      tinyApp2,
+      tinyApp3,
+      tinyApp4
+    ]
+  },
+  "2": {
+    title: "Tweeter",
+    description: "Single-page Twitter clone with responsive design, asynchronous events, input validation, relative time calculation, and back-to-top button.",
+    tech: "Tech stack: Javascript, Node.js, Express, HTML, CSS, jQuery, Ajax.",
+    link: "https://github.com/gybubest/tweeter",
+    snapshots: [
+      tweeter1,
+      tweeter2,
+      tweeter3,
+      tweeter4,
+      tweeter5
+    ]
+  },
+  "3": {
     title: "Interview Scheduler",
     description: "SAP which helps users book, edit, and cancel appointments. ",
     tech: "Tech stack: Javascript, React, Express, SQL, Jest, Storybook, Cypress.",
@@ -37,7 +71,7 @@ const projects = {
       interviewScheduler2
     ]
   },
-  "2": {
+  "4": {
     title: "Jungle-rails",
     description: "E-commerce application with customized categories and checkout experience.",
     tech: "Tech stack: Ruby, Rails, Active Record, PostgreSQL, RSpec, Capybara.",
@@ -48,7 +82,7 @@ const projects = {
       jungleRails3
     ]
   },
-  "3": {
+  "5": {
     title: "Album Viewer",
     description: "SPA which enables users to view albums and search photos inside an album",
     tech: "Tech stack: Javascript, React.",
@@ -59,7 +93,7 @@ const projects = {
       leagueFrontend3
     ]
   },
-  "4": {
+  "6": {
     title: "Movie Collection",
     description: "SPA which enables users to search movies from OMDB, select up to 5 favourites for nomination.",
     tech: "Tech stack: Javascript, React.",
@@ -68,7 +102,7 @@ const projects = {
       shopifyFrontend1
     ]
   },
-  "5": {
+  "7": {
     title: "Insight",
     description: "My graduation project at Lighthouse Labs Bootcamp. Professional networking application which helps employers leverage their employees to make referrals, and open up the hidden job market for individual users.",
     tech: "Tech stack: Javascript, React, Ruby on Rails, Active Record, PostgreSQL.",
@@ -86,7 +120,7 @@ const projects = {
       insight10
     ]
   },
-  "6": {
+  "8": {
     title: "iProxy",
     description: "Dashboard application for managing proxy connections. I implemented Blog component and and built a multi-language library from scratch using i18n.",
     tech: "Tech stack: Typescript, React, Redux, Redux-observable, Styled Components.",
@@ -97,7 +131,7 @@ const projects = {
       iproxy3
     ]
   },
-  "7": {
+  "9": {
     title: "Maegan Back-Office",
     description: "Dashboard application for managing restaurants, menus and online orders. I Created Form components with complex structures and customized functionalities based on the users' settings.",
     tech: "Tech stack: Typescript, Angular, RxJS, Bootstrap, Less.",
