@@ -15,7 +15,7 @@ const NavBar = () => {
           <Links>
             <Link to={'/'}>HOME</Link>
             <Link to={'/portfolio'}>PORTFOLIO</Link>
-            <a href={'https://resume.creddle.io/resume/dmn2na5o6bs'} target="_blank" rel="noreferrer">RESUME</a>
+            {/*<a href={'https://resume.creddle.io/resume/dmn2na5o6bs'} target="_blank" rel="noreferrer">RESUME</a>*/}
           </Links>
         </Navigation>
     </Wrapper>

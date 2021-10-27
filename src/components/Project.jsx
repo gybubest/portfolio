@@ -7,7 +7,7 @@ const Project = (props) => {
   const { title, description, tech, link, snapshots } = props.portfolio?.[id];
   const pictures = snapshots?.map((snapshot, i) => {
     return (
-      <img key={i} src={snapshot}/>
+      <img key={i} src={snapshot} alt={`screenshot ${i}`}/>
     )
   })
 
@@ -16,7 +16,7 @@ const Project = (props) => {
       <Title>
         <span>{title}</span>
         {link && <a href={link} target="_blank" rel="noreferrer">
-          <img src={weblink}/>
+          <img src={weblink} alt={'Link'}/>
         </a>}
       </Title>
       <p>{description}</p>

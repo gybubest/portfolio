@@ -6,7 +6,7 @@ import emailIcon from '../assets/icons/email.png';
 
 const contactInfo = {
   phone: {
-    value: '+16477646662',
+    // value: '+16477646662',
     icon: phoneIcon,
     alt: 'Phone number',
     title: 'Copy Phone Number'

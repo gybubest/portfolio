@@ -4,7 +4,7 @@ import contactInfo from '../../assets/contactInfo';
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
-  const { phone, email, github, linkedIn, location } = contactInfo;
+  const { email, github, linkedIn, location } = contactInfo;
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,7 +24,7 @@ const Contact = () => {
       </CopyMessage>
       <SocialMedia>
         <CopyContact onClick={() => copyToClipBoard(email.value)}><SMIcons src={email.icon} alt={email.alt} title={email.title}></SMIcons></CopyContact>
-        <CopyContact onClick={() => copyToClipBoard(phone.value)}><SMIcons src={phone.icon} alt={phone.alt} title={phone.title}></SMIcons></CopyContact>
+        {/*<CopyContact onClick={() => copyToClipBoard(phone.value)}><SMIcons src={phone.icon} alt={phone.alt} title={phone.title}></SMIcons></CopyContact>*/}
         <a href={github.value} target="_blank" rel="noreferrer"><SMIcons src={github.icon} alt={github.alt} title={github.title}></SMIcons></a>
         <a href={linkedIn.value} target="_blank" rel="noreferrer"><SMIcons src={linkedIn.icon} alt={linkedIn.alt} title={linkedIn.title}></SMIcons></a>
         <a href={location.value} target="_blank" rel="noreferrer"><SMIcons src={location.icon} alt={location.alt} title={location.title} lastIcon></SMIcons></a>

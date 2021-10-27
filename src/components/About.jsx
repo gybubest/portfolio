@@ -8,7 +8,7 @@ const About = () => {
   const skillsIHave = Object.keys(technologies).map((t, i) => {
     return (
       <div key={i}>
-        <img src={technologies[t]}/>
+        <img src={technologies[t]} alt={t}/>
         <span>{t}</span>
       </div>
     )

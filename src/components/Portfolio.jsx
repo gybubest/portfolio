@@ -9,7 +9,7 @@ const Portfolio = () => {
     const {title, snapshots} = projects?.[key];
     return (
       <Link to={`${url}/${key}`} key={i}>
-        <img src={snapshots?.[0]}/>
+        <img src={snapshots?.[0]} alt={`screenshot ${i}`}/>
         <span>{title}</span>
       </Link>
     )
