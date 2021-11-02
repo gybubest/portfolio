@@ -138,10 +138,10 @@ const projects = {
     link: "https://tacitcorporation.com/",
     snapshots: [
       backOffice1,
-      backOffice2,
-      backOffice3,
-      backOffice4,
-      backOffice5
+      // backOffice2,
+      // backOffice3,
+      // backOffice4,
+      // backOffice5
     ]
   }
 }
